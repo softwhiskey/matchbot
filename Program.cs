@@ -52,18 +52,6 @@ namespace Kinmatch
             );
             await Task.Delay(-1);
         }
-        static InlineKeyboardMarkup markup()
-        {
-            return new InlineKeyboardMarkup(
-                new[]
-                {
-                    new[]
-                    {
-                        InlineKeyboardButton.WithUrl("Управление обращением", "https://t.me/kinmatch_bot?start=4497"),
-                    },
-                }
-            );
-        }
         internal static List<long> cachedUsers = new List<long>();
         private static async Task HandleUpdateAsync(ITelegramBotClient client, Update update, CancellationToken arg3)
         {
